@@ -20,16 +20,16 @@ class MainActivity : AppCompatActivity() {
         val btnComprar = findViewById<Button>(R.id.btnComprar)
 
         val listaProduto = listOf(
-            Produto(1L, "Feijão 1Kg", 2.69),
-            Produto(2L, "Leite", 2.70),
-            Produto(3L, "Macarrão", 16.70),
-            Produto(4L, "Farofa", 3.38),
-            Produto(5L, "Refrigerante", 3.00),
-            Produto(6L, "Batata-frita", 5.00)
+            Produto(1L, "Feijão 1Kg", 2.69,0),
+            Produto(2L, "Leite", 2.70,0),
+            Produto(3L, "Macarrão", 16.70,0),
+            Produto(4L, "Farofa", 3.38,0),
+            Produto(5L, "Refrigerante", 3.00,0),
+            Produto(6L, "Batata-frita", 5.00,0)
         )
 
         listViewItens.adapter = AdapterProduto(listaProduto, this)
 
-        listViewItens
+
     }
 }
